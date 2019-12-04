@@ -19,6 +19,8 @@ const setupInput = function(conn) {
       conn.write('Move: down');
     } else if (key === "d") {
       conn.write('Move: right');
+    } else if (key === "m") {
+      conn.write("Say: Hi everybody!!!");
     }
   };
   stdin.setRawMode(true);
