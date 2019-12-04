@@ -13,9 +13,6 @@ const connect = function() {
 
   conn.on('connect', (callback) => {
     console.log("Successfully connected to game server");
-  })
-
-  conn.on('connect', () => {
     conn.write('Name: SWZ');
   })
 
